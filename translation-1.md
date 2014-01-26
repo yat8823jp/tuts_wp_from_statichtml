@@ -44,10 +44,10 @@ classやIDは後で追加するPHPの関数によって自動的に追加され�
 以下のようにヘッダの左側は、その中に、サイトの名前と説明を持つdiv要素が含まれています。
 
 
-`<div class="site-name half left"><!-- site name and description --></div>
- <div class="site-name half left">
-    <h1 class="one-half-left" id="site-title"><a title="Creating a WordPress theme from static html - home" rel="home">WordPress Theme Building</a></h1>
-    <h2 id="site-description">Creating a WordPress theme from static html</h2>
+`<div class="site-name half left"><!-- site name and description --></div>  
+ <div class="site-name half left">  
+    <h1 class="one-half-left" id="site-title"><a title="Creating a WordPress theme from static html - home" rel="home">WordPress Theme Building</a></h1>  
+    <h2 id="site-description">Creating a WordPress theme from static html</h2>  
 </div>`
 
 
