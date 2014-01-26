@@ -43,25 +43,25 @@ classやIDは後で追加するPHPの関数によって自動的に追加され�
 ワードプレスはサイト名や説明にclassやIDを自動的に追加しませんが、ワードプレスの用語と一致しているものを使用することは理にかなっています。
 以下のようにヘッダの左側は、その中に、サイトの名前と説明を持つdiv要素が含まれています。
 
-
-`<div class="site-name half left"><!-- site name and description --></div>`
-`<div class="site-name half left">`
-`    <h1 class="one-half-left" id="site-title"><a title="Creating a WordPress theme from static html - home" rel="home">WordPress Theme Building</a></h1>`
-`    <h2 id="site-description">Creating a WordPress theme from static html</h2>  
-</div>`
-
+```
+<div class="site-name half left"><!-- site name and description --></div>
+ <div class="site-name half left">
+    <h1 class="one-half-left" id="site-title"><a title="Creating a WordPress theme from static html - home" rel="home">WordPress Theme Building</a></h1>
+    <h2 id="site-description">Creating a WordPress theme from static html</h2>
+</div>
+```
 
 私のデザインの右側には、住所や電話番号または検索ボックスのためのスペースがあります。
 あなたは、あなたのテーマのユーザーに、ウィジェット領域として設定することで、完全な柔軟性を与えることができます。
 
 後のシリーズで、どのようにウィジェット領域を作成するかを紹介しますが、今は関連するクラスを追加します。
 
-
-`<!-- an aside in the header - this will be populated via a widget area later -->
+```
+<!-- an aside in the header - this will be populated via a widget area later -->
 <aside class="header widget-area half right" role="complementary">
     <div class="widget-container">This will be a widget area in the header - address details (or anything else you like) goes here</div><!-- .widget-container -->
-</aside><!-- .half right -->`
-
+</aside><!-- .half right -->
+```
 
 ##Images
 コンテンツに追加する最も重要なことは、画像のためのクラスです。
@@ -73,15 +73,11 @@ classやIDは後で追加するPHPの関数によって自動的に追加され�
 
 最初に追加為の
 
-`
-<img class="size-large" alt="" src="images/featured-image.jpg" />
-`
+`<img class="size-large" alt="" src="images/featured-image.jpg" />`
 
 2番に追加するための
 
-`
-<img class="alignright" alt="" src="images/another-image.jpg" />
-`
+`<img class="alignright" alt="" src="images/another-image.jpg" />`
 
 （Note that in your final theme you’ll remove the code for these images as they’ll automatically be added by WordPress, but it helps to include them so that you can set up the styling correctly.）
 最終的なテーマに関する注意
@@ -90,6 +86,7 @@ classやIDは後で追加するPHPの関数によって自動的に追加され�
 
 マークアップにクラスを追加したので、画像用のクラスをスタイルシートに対し、以下のとおり追記しなければなりません。
 
+```
 /* Images */
  
 img {
@@ -122,16 +119,18 @@ img {
 #content img.aligncenter {
     margin-bottom: 12px;
 }
-
+```
 デモのページを見ると、最初の画像はコンテンツ幅の100％であり、2番めの画像は右にフロートさせて余白をとっています。
 
 
-[Sidebar and Footer]
+##Sidebar and Footer
 
 サイドバーとフッターもウィジェットエリアに含む必要があるので、関連するクラスをを使用するように、
 マークアップとスタイルを追加し、スタイルシートにそれらを使用するように記述する。
 
 サイドバーのマークアップは下記の通り
+
+```
 <!-- the sidebar - in WordPress this will be populated with widgets -->
 <aside class="sidebar widget-area one-third right" role="complementary">
     <div class="widget-container">
@@ -143,7 +142,7 @@ img {
         <p>A second sidebar widget - maybe you could use a plugin to display a social media feed, or simply list your most recent posts.</p>
     </div><!-- .widget-container -->
 </aside>
-
+```
 
 （The markup for the footer contains four widget areas, each of which can hold more than one widget. As you can see below, I add a class to each which tells the browser which one it is, so I can target each of them for styling later on.）
 フッターのマークアップは、4つのウィジェットエリアを含んでおり、それぞれが複数のウィジェットを保持することが出来ます。
@@ -153,6 +152,6 @@ img {
 その為、それぞれをターゲットにしたスタイリングを後から行えます。
 
 
-[Summary]
+##Summary
 テーマファイルに変換するhtmlファイルの準備が出来ました。
 次のチュートリアルでは、それらを分割し、いくつかの基本的なPHPを追加する方法を説明します。
