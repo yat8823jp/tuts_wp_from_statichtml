@@ -43,25 +43,25 @@ classやIDは後で追加するPHPの関数によって自動的に追加され�
 ワードプレスはサイト名や説明にclassやIDを自動的に追加しませんが、ワードプレスの用語と一致しているものを使用することは理にかなっています。
 以下のようにヘッダの左側は、その中に、サイトの名前と説明を持つdiv要素が含まれています。
 
-`
-<div class="site-name half left"><!-- site name and description --></div>
+
+`<div class="site-name half left"><!-- site name and description --></div>
  <div class="site-name half left">
     <h1 class="one-half-left" id="site-title"><a title="Creating a WordPress theme from static html - home" rel="home">WordPress Theme Building</a></h1>
     <h2 id="site-description">Creating a WordPress theme from static html</h2>
-</div>
-`
+</div>`
+
 
 私のデザインの右側には、住所や電話番号または検索ボックスのためのスペースがあります。
 あなたは、あなたのテーマのユーザーに、ウィジェット領域として設定することで、完全な柔軟性を与えることができます。
 
 後のシリーズで、どのようにウィジェット領域を作成するかを紹介しますが、今は関連するクラスを追加します。
 
-`
-<!-- an aside in the header - this will be populated via a widget area later -->
+
+`<!-- an aside in the header - this will be populated via a widget area later -->
 <aside class="header widget-area half right" role="complementary">
     <div class="widget-container">This will be a widget area in the header - address details (or anything else you like) goes here</div><!-- .widget-container -->
-</aside><!-- .half right -->
-`
+</aside><!-- .half right -->`
+
 
 ##Images
 コンテンツに追加する最も重要なことは、画像のためのクラスです。
