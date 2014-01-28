@@ -56,6 +56,7 @@ index.htmlを4つのphpファイルに分割します。
 header.phpにindex.html上部をコピーします。
 index.htmlを開き、**DOCTYPE宣言**から**div class="main"**までを選択します。
 
+`
 <!-- add a class to the html tag if the site is being viewed in IE, to allow for any big fixes -->
 <!--[if lt IE 8]><html class="ie7"><![endif]-->
 <!--[if IE 8]><html class="ie8"><![endif]-->
@@ -88,7 +89,8 @@ index.htmlを開き、**DOCTYPE宣言**から**div class="main"**までを選択
         </ul>
     </nav><!-- .main -->
     <div class="main">'
-'
+`
+
 このコードをコピーし、header.phpに貼り付け、保存します。
 
 ##Populating the Sidebar File
@@ -150,6 +152,7 @@ footer.phpを移入するプロセスもヘッダー、サイドバーと同様�
     </aside><!-- #fatfooter -->
 </footer>
 `
+
 fotter.phpにコピー＆ペーストし、保存します。
 
 main divのとじタグがサイドバーではなく、フッターで閉じられているのが何故か？と、不思議に思うかもしれませんが
@@ -173,7 +176,7 @@ main divのとじタグがサイドバーではなく、フッターで閉じら
 ヘッダーとサイドバーの間にスペースを開けて下さい。
 もう一度index.htmlを開き、**div class="main"**の要素とサイドバーの間のコードを全て選択します。
 
-'
+`
 <div class="two-thirds" id="content">
     <article class="post" id="01">
         <h2 class="entry-title">This is the title of a post or page</h2>
@@ -195,7 +198,7 @@ main divのとじタグがサイドバーではなく、フッターで閉じら
         </section><!-- .entry-meta -->
     </article><!-- #01-->
 </div><!-- #content-->
-'
+`
 
 これをコピーして、index.phpファイルのget_header()の行の下に貼り付け保存します。
 
