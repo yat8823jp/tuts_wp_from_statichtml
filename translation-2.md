@@ -56,7 +56,7 @@ index.htmlを4つのphpファイルに分割します。
 header.phpにindex.html上部をコピーします。
 index.htmlを開き、**DOCTYPE宣言**から**div class="main"**までを選択します。
 
-`
+```
 <!-- add a class to the html tag if the site is being viewed in IE, to allow for any big fixes -->
 <!--[if lt IE 8]><html class="ie7"><![endif]-->
 <!--[if IE 8]><html class="ie8"><![endif]-->
@@ -89,7 +89,7 @@ index.htmlを開き、**DOCTYPE宣言**から**div class="main"**までを選択
         </ul>
     </nav><!-- .main -->
     <div class="main">'
-`
+```
 
 このコードをコピーし、header.phpに貼り付け、保存します。
 
@@ -99,7 +99,7 @@ index.htmlを開き、**DOCTYPE宣言**から**div class="main"**までを選択
 サイドバー用に同様の作業を行います。
 index.htmlの**「aside class="sidebar"」**要素とその内部全てを選択します。
 
-`
+```
 <!-- the sidebar - in WordPress this will be populated with widgets -->
 <aside class="sidebar widget-area one-third right" role="complementary">
     <div class="widget-container">
@@ -111,7 +111,7 @@ index.htmlの**「aside class="sidebar"」**要素とその内部全てを選択
         <p>A second sidebar widget, maybe you could use a plugin to display a social media feed, or simply list your most recent posts.</p>
     </div><!-- .widget-container -->
 </aside>
-`
+```
 
 sidebar.phpにコピーし、貼り付けて保存します。
 
@@ -120,7 +120,7 @@ sidebar.phpにコピーし、貼り付けて保存します。
 footer.phpを移入するプロセスもヘッダー、サイドバーと同様です。
 サイドバーの後を全てを選択します。
 
-`
+```
 </div><!-- .main -->
 <footer>
     <!-- the .fatfooter aside - I use this to enable a screen-wide background on the footer while still keeping the footer contents in line with the layout -->
@@ -151,7 +151,7 @@ footer.phpを移入するプロセスもヘッダー、サイドバーと同様�
         </div><!-- .fourth .widget-area -->
     </aside><!-- #fatfooter -->
 </footer>
-`
+```
 
 fotter.phpにコピー＆ペーストし、保存します。
 
@@ -166,17 +166,17 @@ main divのとじタグがサイドバーではなく、フッターで閉じら
 これは少し複雑ですが、WordPressはヘッダー、サイドバー、フッターを含めて利用するために必要な、いくつかのPHPの機能を追加する必要があります。
 空のindex.phpファイルを開き、以下のようにコードを追加します。
 
-`
+```
 <?php get_header(); ?>
  
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-`
+```
 
 ヘッダーとサイドバーの間にスペースを開けて下さい。
 もう一度index.htmlを開き、**div class="main"**の要素とサイドバーの間のコードを全て選択します。
 
-`
+```
 <div class="two-thirds" id="content">
     <article class="post" id="01">
         <h2 class="entry-title">This is the title of a post or page</h2>
@@ -198,7 +198,7 @@ main divのとじタグがサイドバーではなく、フッターで閉じら
         </section><!-- .entry-meta -->
     </article><!-- #01-->
 </div><!-- #content-->
-`
+```
 
 これをコピーして、index.phpファイルのget_header()の行の下に貼り付け保存します。
 
