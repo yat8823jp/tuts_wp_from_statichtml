@@ -76,6 +76,54 @@ WordPressがサイドバーやフッターなどのコンテンツを表示す�
 * the_ID()…表示されている投稿もしくはページを参照するためのユニークなIDをarticle要素に対して追加します。
 * post_class…投稿カテゴリや投稿タイプなどを含む、articleの要素に対して、一連のclassが追加されます。
 
+例えば、CSSで特定の投稿をターゲットにするIDを使用することができ、classは特定のカテゴリと同じ方法で、全ての投稿にスタイルを適用させることが出来ます。
+
+##4. Adding the Page or Post Title in the Loop
+-ループ内のページや記事のタイトル追加- 
+
+投稿やページに表示される次のものがタイトルで、既存のコードでは&lt;h2&gt;タグで固定されたタイトルです。
+読んでその行を探します。
+
+```
+<h2 class="entry-title">This is the title of a post or page</h2>
+```
+
+編集します。
+
+```<h2 class="entry-title"><a title="<?php printf( esc_attr__( 'Permalink to %s', 'compass' ), the_title_attribute( 'echo=0' ) ); ?>" href="<?php the_permalink(); ?>" rel="bookmark">
+    <?php the_title(); ?>
+</a></h2>
+```
+
+これは2つのことを追加しています。
+
+* 投稿やページ自体（ the_permalink() の使用）へのリンク。これにより、ユーザーは投稿自体のページへのリンクをクリック出来るようになるため、アーカイブページを使うのに便利になります。
+* 投稿やページのタイトルが、WordPressによって自動的に移入されます。
+
+##5. Adding Post Metadata
+-ポストメタデータの追加- 
+
+ループ内最初のsection要素はポストメタデータ - 投稿日、日付、著者です。
+コードを見つけましょう。（最初のsection要素もしくは、全てのコード：テーマ内で異なっていても構いません。）
+
+```
+Posted on 5 November by Rachel McCollin
+```
+
+を下記に変えて下さい。
+
+```
+Posted on <?php the_date(); ?> by <?php the_author(); ?>
+```
+
+次の2つのテンプレートタグを追加しました。
+
+* 投稿が公開された日付：the_date()
+* 投稿の著者：the_author()
+
+
+
+
 
 
 
