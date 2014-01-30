@@ -20,3 +20,15 @@ WebSite:wp.yat-net.com
 
 ##Creating a WordPress Theme From Static HTML: Creating Template Files
 [translation-2](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-2.md)
+
+##Creating a WordPress Theme From Static HTML: Uploading Your Theme to WordPress
+
+##Creating a WordPress Theme From Static HTML: Adding a Loop  
+[translation-4](http://wp.tutsplus.com/tutorials/theme-development/creating-a-wordpress-theme-from-static-html-adding-a-loop/)  
+ 1.Adding a Page in WordPress  
+ 2.Adding a Loop  
+ 3. Classes and IDs for the Article  
+ 4. Adding the Page or Post Title in the Loop  
+ 5. Adding Post Metadata  
+ 6. Adding the Post Content  
+ 7. More Post Metadata  
