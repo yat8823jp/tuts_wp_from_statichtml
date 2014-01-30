@@ -90,7 +90,8 @@ WordPressがサイドバーやフッターなどのコンテンツを表示す�
 
 編集します。
 
-```<h2 class="entry-title"><a title="<?php printf( esc_attr__( 'Permalink to %s', 'compass' ), the_title_attribute( 'echo=0' ) ); ?>" href="<?php the_permalink(); ?>" rel="bookmark">
+```
+<h2 class="entry-title"><a title="<?php printf( esc_attr__( 'Permalink to %s', 'compass' ), the_title_attribute( 'echo=0' ) ); ?>" href="<?php the_permalink(); ?>" rel="bookmark">
     <?php the_title(); ?>
 </a></h2>
 ```
