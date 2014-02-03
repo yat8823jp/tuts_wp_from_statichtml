@@ -34,7 +34,7 @@ WebSite:wp.yat-net.com
 7.More Post Metadata  
 
 ##Creating a WordPress Theme From Static HTML: Setting Up the Header
-[translation-5](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-5.md)
+[translation-5](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-5.md)  
 1.Adding Meta Tags to Your Header File  
 2.Adding a Dynamically Generated Site Title and Description  
 3.Adding the wp_head Action Hook to Your Theme
