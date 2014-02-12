@@ -1,4 +1,4 @@
-﻿#Creating a WordPress Theme From Static HTML: Preparing the Markup
+#Creating a WordPress Theme From Static HTML: Preparing the Markup
 
 **Reference**  
 http://wp.tutsplus.com/tutorials/theme-development/creating-a-wordpress-theme-from-static-html-preparing-the-markup/
@@ -22,6 +22,7 @@ WebSite:wp.yat-net.com
 [translation-2](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-2.md)
 
 ##Creating a WordPress Theme From Static HTML: Uploading Your Theme to WordPress
+[translation-3](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-3.md)
 
 ##Creating a WordPress Theme From Static HTML: Adding a Loop  
 [translation-4](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-4.md)  
