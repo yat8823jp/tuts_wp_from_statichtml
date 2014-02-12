@@ -22,7 +22,7 @@ WebSite:wp.yat-net.com
 [translation-2](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-2.md)
 
 ##Creating a WordPress Theme From Static HTML: Uploading Your Theme to WordPress
-[translation-3](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-3.md)
+[translation-3](https://github.com/yat8823jp/tuts_wp_from_statichtml/blob/master/translation-3.md)  
 　1.Setting Up the Theme in the Stylesheet  
 　2.Calling the Stylesheet From the Header File  
 　3.Creating a Screenshot  
